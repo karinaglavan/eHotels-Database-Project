@@ -1,4 +1,4 @@
-require("dotenv").config();
+
 
 /*************************** CONNECTING TO MYSQL **************************/
 // This section is inspired by Webslesson (https://www.youtube.com/watch?v=wg9iwG8XfWY&list=PLxl69kCRkiI3j7RHumBhAr7MyZ4ehk9Q8&index=6)
@@ -14,7 +14,7 @@ const db = mysql.createConnection({ //Connects to ehotels in MySQL
     host: process.env.DB_HOST,
     user: process.env.DB_USER,
     password: process.env.DB_PASSWORD,
-    database: process.env.DB_NAME
+    database: "ehotels"
 });
 
 db.connect(error => { //Connect to database or draw error
